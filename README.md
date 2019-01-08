@@ -37,6 +37,10 @@ import VueSocketIO from 'vue-socket.io'
 Vue.use(new VueSocketIO({
     debug: true,
     connection: 'http://metinseylan.com:1992',
+    params: {
+        query: 'example=value',
+        type: ['websocket']
+    },
     vuex: {
         store,
         actionPrefix: 'SOCKET_',

@@ -1,6 +1,6 @@
 {
-  "name": "vue-socket.io",
-  "author": "Metin Seylan <metinsyln@gmail.com>",
+  "name": "vue-socket.io-params",
+  "author": "Valentor Milko <milko3297@gmail.com>",
   "version": "3.0.4",
   "description": "socket.io implemantation for vuejs and vuex",
   "main": "dist/vue-socketio.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MetinSeylan/Vue-Socket.io.git"
+    "url": "git+https://github.com/luckone/Vue-Socket.io"
   },
   "keywords": [
     "vuejs",
@@ -25,9 +25,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MetinSeylan/Vue-Socket.io/issues"
+    "url": "https://github.com/luckone/Vue-Socket.io/issues"
   },
-  "homepage": "https://github.com/MetinSeylan/Vue-Socket.io",
+  "homepage": "https://github.com/luckone/Vue-Socket.io",
   "dependencies": {
     "socket.io-client": "^2.1.1"
   },
