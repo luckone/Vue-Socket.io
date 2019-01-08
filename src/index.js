@@ -12,10 +12,10 @@ export default class VueSocketIO {
      * @param vuex
      * @param debug
      */
-    constructor({connection, vuex, debug}){
+    constructor({connection, vuex, debug, params}){
 
         Logger.debug = debug;
-        this.io = this.connect(connection);
+        this.io = this.connect(connection, params);
         this.emitter = new Emitter(vuex);
         this.listener = new Listenler(this.io, this.emitter);
 
@@ -40,7 +40,7 @@ export default class VueSocketIO {
      * registering socketio instance
      * @param connection
      */
-    connect(connection){
+    connect(connection, params){
 
         if(connection && typeof connection === 'object'){
 
@@ -52,7 +52,7 @@ export default class VueSocketIO {
 
             Logger.info('Received connection string');
 
-            return this.io = SocketIO(connection);
+            return this.io = SocketIO(connection, params);
 
         } else {
 
